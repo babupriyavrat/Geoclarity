@@ -9,4 +9,5 @@ The mobile android code is built-in eclipse and to build the code, you might nee
 The web interface code is under RoofZouk-1.0 copy.zip. Unzip the files and make sure that you change DB password according to configuration.
 
 # Presentation 
-You can find the presentation in the repository to understand the functionality.
+You can find the presentation in the below link to understand features provided by this source code.  https://docs.google.com/presentation/d/1ZJWTvn7CLK67RsrTTpJDreR1Y0yxMyAldSfJagH7GD0/pub?start=true&loop=false&delayms=3000 
+
