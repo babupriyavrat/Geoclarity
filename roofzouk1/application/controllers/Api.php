@@ -290,7 +290,7 @@ class Api extends CI_Controller {
 		$userAddr = "";
 		// find user location 
 		if ($userInfo->last_latitude!="") {
-			$url = "https://maps.googleapis.com/maps/api/geocode/json?latlng={$userInfo->last_latitude},{$userInfo->last_longitude}&key=AIzaSyAbLgfQr6-ils7tHMyDkrmTC6HX8PCzSwU";
+			$url = "https://maps.googleapis.com/maps/api/geocode/json?latlng={$userInfo->last_latitude},{$userInfo->last_longitude}&key=#POPULATE_API_KEY";
 	        $apiResult = file_get_contents($url);
 			$apiJson = json_decode($apiResult);
 			$userAddr = $apiJson->results[0]->formatted_address;
@@ -298,10 +298,10 @@ class Api extends CI_Controller {
 		$this->user->setSOSResponse($sosmain_id, $user_id, $rescode, $userAddr);
 	}
 	public function sendPush($data, $regid) {
-		$apiKey = "AIzaSyAbLgfQr6-ils7tHMyDkrmTC6HX8PCzSwU";
+		$apiKey = "#POPULATE_API_KEY";
 		
 		// Replace with real client registration IDs 
-		$registrationIDs = array( "APA91bFgFqdgXG8TkiNmnDT91dhOxFA1yxas2ppOw3Sll9w8R0WyD_g_la1Ti1vCXT2XVdVMV7zE3ileGdCwI3HDvbZHY-rToHrobXJElCBQdYPJMA3aXTrl5if9WpMkpDFVrF5tCuHr");
+		$registrationIDs = array( "POPULATE_REGISTRATION_ID");
 		//$registrationIDs = array($regid);
 		if ($regid=='') $regid = $registrationIDs;
 		// Message to be sent

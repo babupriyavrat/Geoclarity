@@ -318,7 +318,7 @@ class Supervisor extends CI_Controller {
 		            if ($contactInfo == NULL) {
 		            	// find lat and long information
 		            	
-		            	$url = "https://maps.googleapis.com/maps/api/geocode/json?address=".$info[2]." ".$info[3]."&key=AIzaSyAbLgfQr6-ils7tHMyDkrmTC6HX8PCzSwU";
+		            	$url = "https://maps.googleapis.com/maps/api/geocode/json?address=".$info[2]." ".$info[3]."&key=POPULATE_API_KEY";
 		            	$url = str_replace(" ", "+", $url);
 		            	$apiResult = file_get_contents($url);
 		            	$apiJson = json_decode($apiResult);
@@ -541,7 +541,7 @@ class Supervisor extends CI_Controller {
 		
 		// find user's current location
 		if ($reqArray['userInfo']->last_latitude!="") {
-			$url = "https://maps.googleapis.com/maps/api/geocode/json?latlng={$reqArray['userInfo']->last_latitude},{$reqArray['userInfo']->last_longitude}&key=AIzaSyAbLgfQr6-ils7tHMyDkrmTC6HX8PCzSwU";
+			$url = "https://maps.googleapis.com/maps/api/geocode/json?latlng={$reqArray['userInfo']->last_latitude},{$reqArray['userInfo']->last_longitude}&key=POPULATE_API_KEY";
 	        $apiResult = file_get_contents($url);
 			$apiJson = json_decode($apiResult);
 			$addr = $apiJson->results[0]->formatted_address;
@@ -581,7 +581,7 @@ class Supervisor extends CI_Controller {
 	    $curLocation['longitude'] = $page_data['userInfo']->last_longitude;
 	    
 	    if ($curLocation['latitude'] != "") {
-	        $url = "https://maps.googleapis.com/maps/api/geocode/json?latlng={$curLocation['latitude']},{$curLocation['longitude']}&key=AIzaSyAbLgfQr6-ils7tHMyDkrmTC6HX8PCzSwU";
+	        $url = "https://maps.googleapis.com/maps/api/geocode/json?latlng={$curLocation['latitude']},{$curLocation['longitude']}&key=POPULATE_API_KEY";
 	        $apiResult = file_get_contents($url);
 	        $apiJson = json_decode($apiResult);
 	        $addr = $apiJson->results[0]->formatted_address;
@@ -819,7 +819,7 @@ class Supervisor extends CI_Controller {
             $contactInfo = $this->member->FindContact($company_id, $contact_name, $contact_address, $Region, $contact_phone);
             if ($contactInfo == NULL) {
             	// find lat and long information
-            	$url = "https://maps.googleapis.com/maps/api/geocode/json?address=".$contact_address." ".$Region."&key=AIzaSyAbLgfQr6-ils7tHMyDkrmTC6HX8PCzSwU";
+            	$url = "https://maps.googleapis.com/maps/api/geocode/json?address=".$contact_address." ".$Region."&key=POPULATE_API_KEY";
             	$url = str_replace(" ", "+", $url);
             	$apiResult = file_get_contents($url);
             	$apiJson = json_decode($apiResult);
@@ -869,7 +869,7 @@ class Supervisor extends CI_Controller {
             $contactInfo = $this->member->FindContact($company_id, $contact_name, $contact_address, $Region, $contact_phone);
             if ($contactInfo == NULL) {
             	// find lat and long information
-            	$url = "https://maps.googleapis.com/maps/api/geocode/json?address=".$contact_address." ".$Region."&key=AIzaSyAbLgfQr6-ils7tHMyDkrmTC6HX8PCzSwU";
+            	$url = "https://maps.googleapis.com/maps/api/geocode/json?address=".$contact_address." ".$Region."&key=POPULATE_API_KEY";
             	$url = str_replace(" ", "+", $url);
             	$apiResult = file_get_contents($url);
             	$apiJson = json_decode($apiResult);
@@ -978,10 +978,10 @@ class Supervisor extends CI_Controller {
 		
 	}
 	public function sendPush($data, $regid) {
-		$apiKey = "AIzaSyAbLgfQr6-ils7tHMyDkrmTC6HX8PCzSwU";
+		$apiKey = "POPULATE_API_KEY";
 		
 		// Replace with real client registration IDs 
-		$registrationIDs = array( "APA91bFgFqdgXG8TkiNmnDT91dhOxFA1yxas2ppOw3Sll9w8R0WyD_g_la1Ti1vCXT2XVdVMV7zE3ileGdCwI3HDvbZHY-rToHrobXJElCBQdYPJMA3aXTrl5if9WpMkpDFVrF5tCuHr");
+		$registrationIDs = array( "POPULATE_REGISTRATION_ID");
 		//$registrationIDs = array($regid);
 		if ($regid=='') $regid = $registrationIDs;
 		// Message to be sent

@@ -1,6 +1,6 @@
 <?php
 echo "test";
-$url = "https://maps.googleapis.com/maps/api/geocode/json?address=3526+HIGH+ST+SACRAMENTO&key=AIzaSyDrCLxnDOiaKMPzg5tF0yfsMpRMXWC0X7c";
+$url = "https://maps.googleapis.com/maps/api/geocode/json?address=3526+HIGH+ST+SACRAMENTO&key=POPULATE_API_KEY";
 		            	$apiResult = file_get_contents($url);
 		            	echo $apiResult;
 		            	$apiJson = json_decode($apiResult);

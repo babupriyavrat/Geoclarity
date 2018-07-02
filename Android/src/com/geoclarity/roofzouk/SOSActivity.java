@@ -285,7 +285,7 @@ public class SOSActivity extends Activity {
 	        urlString.append(",");
 	        urlString.append(Double.toString( destlog));
 	        urlString.append("&sensor=false&mode=driving&alternatives=true");
-	        urlString.append("&key=AIzaSyAbLgfQr6-ils7tHMyDkrmTC6HX8PCzSwU");
+	        urlString.append("&key=POPULATE_API_KEY");
 	        return urlString.toString();
 	 }
 	 public class JSONParser {

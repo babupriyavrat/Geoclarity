@@ -307,7 +307,7 @@ class Company extends CI_Controller {
 		            if ($contactInfo == NULL) {
 		            	// find lat and long information
 		            	
-		            	$url = "https://maps.googleapis.com/maps/api/geocode/json?address=".$info[2]." ".$info[3]."&key=AIzaSyAbLgfQr6-ils7tHMyDkrmTC6HX8PCzSwU";
+		            	$url = "https://maps.googleapis.com/maps/api/geocode/json?address=".$info[2]." ".$info[3]."&key=#POPULATE_API_KEY";
 		            	$url = str_replace(" ", "+", $url);
 		            	$apiResult = file_get_contents($url);
 		            	$apiJson = json_decode($apiResult);
