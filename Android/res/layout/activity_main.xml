@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+	    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" >
+			<fragment
+		      android:id="@+id/map"
+		      android:name="com.google.android.gms.maps.MapFragment"
+		      android:layout_width="match_parent"
+		      android:layout_height="fill_parent" android:layout_weight="0.6" 
+		      />
+			        
+	        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+			    android:orientation="vertical" android:layout_weight="0.4"
+			    >
+				<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+				    android:background="#cc000000"
+				    android:padding="10dp" android:orientation="vertical"
+				    
+				    >
+				    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+				        android:text="Current Task:" 
+				        android:textColor="#ffffffff"
+				        android:textSize="18dp"/>
+				    
+				    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+				        android:text="" android:id="@+id/txtTaskDetail" 
+				        android:textColor="#ffffffff"
+				        android:textSize="14dp"/>
+				</LinearLayout>
+				
+				<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+				    android:orientation="horizontal" 
+				    android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingBottom="10dp">
+				    
+				    <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1"
+				        android:text="SOS" android:textColor="#FFFFFFFF" android:background="#FFf0ad4e"
+				        android:layout_marginRight="10dp"
+				        android:id="@+id/btnSos" 
+				        />
+				    
+				    <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1"
+				        android:text="Done" android:textColor="#FFFFFFFF" android:background="#FF5cb85c"
+				        android:layout_marginRight="10dp" 
+				        android:id="@+id/btnDone"
+				        />
+				    
+				    <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1"
+				        android:text="Cancel" android:textColor="#FFFFFFFF" android:background="#FFd9534f" 
+				        android:layout_marginRight="10dp"
+				        android:id="@+id/btnCancel"
+				        />
+				</LinearLayout>
+				<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+				    android:orientation="horizontal" android:gravity="center"
+				    android:paddingLeft="10dp"  android:paddingBottom="10dp">
+				    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" 
+				        android:text="Call Customer" android:textColor="#FFFFFFFF" android:background="#FF5cb8f0"
+				        android:layout_marginRight="10dp"  
+				        android:paddingLeft="20dp" android:paddingRight="20dp"
+				        android:id="@+id/btnCall"
+				        />
+				</LinearLayout>
+			</LinearLayout>
+	    </LinearLayout>
+	
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF1F8FE"
+    >
+	
+    
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50dp"
+        android:orientation="vertical" android:gravity="center" android:background="#FF33b5e5"
+        >
+        <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Task History" 
+	        android:textColor="#FFF5f5f5" android:textSize="18dp" android:textStyle="bold"
+	        />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" >
+    
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:id="@+id/layoutList"
+       
+        >
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

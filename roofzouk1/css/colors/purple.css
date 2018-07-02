@@ -1,0 +1,137 @@
+/* PRELOADER IMAGE BACKGROUND */
+.status {
+	background-image: url(../../images/loader-purple.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+/* THE OVERLAY COLORS WHICH WILL SHOW IN FRONT OF BACKGROUND IMAGES*/
+.overlay-layer,
+.overlay-layer-2 {
+	background: #a80ff4;
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjYTgwZmY0IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzc2MDBiMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+background: -moz-linear-gradient(-45deg,  #a80ff4 0%, #7600b1 100%);
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#a80ff4), color-stop(100%,#7600b1));
+background: -webkit-linear-gradient(-45deg,  #a80ff4 0%,#7600b1 100%);
+background: -o-linear-gradient(-45deg,  #a80ff4 0%,#7600b1 100%);
+background: -ms-linear-gradient(-45deg,  #a80ff4 0%,#7600b1 100%);
+background: linear-gradient(135deg,  #a80ff4 0%,#7600b1 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a80ff4', endColorstr='#7600b1',GradientType=1 );
+
+}
+
+/*  */
+
+/* NAVBAR AND LINK COLORS */
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+	color: #9b03e6;
+}
+
+a {
+	color: #9b03e6;
+}
+
+a:hover {
+	color: #9b03e6;
+}
+
+.border-bottom-hover:hover {
+	border-bottom-color: #9b03e6;
+}
+
+.white-button:hover
+{
+	color: #9b03e6; !important;
+}
+
+.sticky-navigation .main-navigation li a:hover,
+.sticky-navigation .login-register li.login a:hover {
+	color: #9b03e6;
+}
+
+.sticky-navigation .main-navigation li.current a {
+	color: #9b03e6;
+}
+
+/* INPUT FIXES */
+.input-box:active,
+.textarea-box:active,
+.input-box:focus,
+.textarea-box:focus {
+	border-color: #9b03e6;
+}
+
+/* CLIENT PHOTO */
+.feedback .pic-container {
+	-webkit-box-shadow: 0px 0px 0px 1px #9b03e6;
+	box-shadow: 0px 0px 0px 1px #9b03e6;
+}
+
+/* BUTTONS*/
+.standard-button,
+.navbar-register-button {
+	background: #9b03e6;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2I4MjhmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM5YjAzZTYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b828ff), color-stop(100%, #9b03e6));
+	background: -webkit-linear-gradient(top, #b828ff 0%, #9b03e6 100%);
+	background: -webkit-gradient(linear, left top, left bottom, from(#b828ff), to(#9b03e6));
+	background: linear-gradient(to bottom, #b828ff 0%, #9b03e6 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@gradient-light', endColorstr='@main-color', GradientType=0);
+	-webkit-box-shadow: 0px 3px 0px #7100a8;
+	box-shadow: 0px 3px 0px #7100a8;
+}
+
+.standard-button:hover,
+.navbar-register-button:hover {
+	color: #ffffff;
+	background: #9b03e6 !important;
+	text-decoration: none;
+}
+
+.standard-button:focus,
+.navbar-register-button:focus {
+	color: #ffffff;
+}
+
+.standard-button:active,
+.navbar-register-button:active {
+	background: #9b03e6 !important;
+	border-color: inherit !important;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+/* COLORED BACKGROUND AND TEXT*/
+.color-bg {
+	background: #9b03e6;
+}
+
+.colored-text {
+	color: #9b03e6;
+}
+
+/* COLORED BORDERS AND LINES */
+.colored-line-left,
+.colored-line-right,
+.colored-line {
+	background: #9b03e6;
+}
+
+.border-right-colored {
+	border-right: 1px solid rgba(155, 3, 230, 0.3);
+}
+
+.border-left-colored {
+	border-left: 1px solid rgba(155, 3, 230, 0.3);
+}
+
+.long-transparent-line {
+	height: 1px;
+	width: 200px;
+	background: rgba(155, 3, 230, 0.3);
+	margin: auto;
+}

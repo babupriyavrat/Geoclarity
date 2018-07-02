@@ -1,0 +1,1 @@
+[14-Jan-2016 16:19:08 UTC] PHP Fatal error:  Call to undefined method Task::getCurrentSOSTasksAll() in /home/geoclarity/public_html/roofzouk/application/controllers/Api.php on line 340

@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF1F8FE"
+    >
+	
+    
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50dp"
+        android:orientation="vertical" android:gravity="center" android:background="#FF33b5e5"
+        >
+        <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="My Profile" 
+	        android:textColor="#FFF5f5f5" android:textSize="18dp" android:textStyle="bold"
+	        />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" >
+        
+        
+    
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingTop="20dp" android:paddingBottom="50dp" android:paddingLeft="30dp" android:paddingRight="30dp"
+        >
+        
+        <EditText android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:hint="Email Address" android:singleLine="true"
+            android:id="@+id/editUserId" 
+            android:editable="false"
+             />
+        <EditText android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp"
+            android:hint="Company Name" android:singleLine="true" 
+            android:id="@+id/editCompanyName"
+            android:editable="false"
+             />
+        <EditText android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp"
+            android:hint="Password" android:singleLine="true" 
+            android:inputType="textPassword"
+            android:id="@+id/editPassword"
+             />
+        <EditText android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp"
+            android:hint="User Name" android:singleLine="true" 
+            android:id="@+id/editUserName"
+             />
+        <Spinner android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp"
+            android:id="@+id/spinnerUserRole"/>
+        
+        <EditText android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp"
+            android:hint="Home Phone" android:singleLine="true" 
+            android:id="@+id/editHomePhone"
+             />
+        <EditText android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp"
+            android:hint="Mobile Phone" android:singleLine="true" 
+            android:id="@+id/editMobilePhone"
+             />
+        
+        <Spinner android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp"
+            android:id="@+id/spinnerVehicleType"/>
+        
+         <EditText android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp"
+            android:hint="Vehicle Reg" android:singleLine="true" 
+            android:id="@+id/editVehicleReg"
+             />
+        
+        
+        <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1"/>
+        
+        <Button android:layout_width="fill_parent" android:layout_height="wrap_content" 
+            android:text="Update" android:textColor="#FF5f5f5f" android:textSize="18dp"
+            android:id="@+id/btnLogin"/>
+        
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

@@ -1,0 +1,57 @@
+
+<div class="container" style="margin-top:100px;">	
+	
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="panel panel-default">
+				<div class="panel-heading"><b>All Users</b></div>
+				<div class="panel-body">
+					<div class="text-left" style="margin-bottom: 10px;">
+						<input type="button" class="btn btn-primary" value="Add User" onclick="location.href='<?php echo base_url()?>index.php/supervisor/useradd'"/>
+					</div>
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>No</th>
+								<th>Email</th>
+								<th>User Name</th>
+								<th>User Role</th>
+								<th>Home Phone</th>
+								<th>Mobile Phone</th>
+								<th>Vehicle Type</th>
+								<th>Vehicle Reg</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<?php $idx=0; foreach ($UserList as $info): ?>
+							<tr>
+								<td><?php echo ++$idx;?></td>
+								<td><?php echo $info->email?></td>
+								<td><?php echo $info->username?></td>
+								<td><?php echo $info->user_roles?></td>
+								<td><?php echo $info->homephone?></td>
+								<td><?php echo $info->mobilephone?></td>
+								<td><?php echo $info->vehicletype?></td>
+								<td><?php echo $info->vehicle_reg?></td>
+								<td><a href='<?php echo base_url()?>index.php/supervisor/useredit/<?php echo $info->user_id?>'>Edit</a></td>
+							</tr>
+							<?php endforeach; ?>
+						</tbody>
+					</table>
+					
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+<script type="text/javascript">
+            //<![CDATA[
+            //var dataForm = new RegisternForm('form-validate', true);
+            $(document).ready(function () {
+                $('.table').dataTable();
+            });
+            //]]>
+        </script>

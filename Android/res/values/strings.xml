@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Geoclarity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    
+    <string-array name="UserRole_Values">
+        <item>INSTALLER</item>
+        <item>EXPERT_TECH</item>
+        <item>DELIVERY</item>
+        <item>DEVICE_COLLECTOR</item>
+        <item>MONEY_RECOLLECT</item>
+    </string-array>
+    
+    <string-array name="VehicleType_Values">
+        <item>VAN</item>
+        <item>TRUCK</item>
+        <item>BIKE</item>
+        <item>CAR</item>
+        <item>DRONE</item>
+        <item>PLANE</item>
+        <item>SHIP</item>
+        <item>BOAT</item>
+    </string-array>
+</resources>
+

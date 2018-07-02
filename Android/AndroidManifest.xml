@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.geoclarity.roofzouk"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:name=".MainApplication"
+        android:theme="@style/AppTheme" >
+         <activity
+            android:name="com.geoclarity.roofzouk.LogoActivity"
+            android:label="@string/app_name" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.geoclarity.roofzouk.LoginActivity"
+            android:label="@string/app_name" android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.geoclarity.roofzouk.FindPasswordActivity" android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.geoclarity.roofzouk.RegisterActivity" android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+        </activity>
+        <activity 
+            android:name="com.geoclarity.roofzouk.MainActivity" android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+        </activity>
+        <activity 
+            android:name="com.geoclarity.roofzouk.SOSActivity" android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+        </activity>
+        <activity 
+            android:name="com.geoclarity.roofzouk.MyProfileActivity" android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+        </activity>
+        <activity 
+            android:name="com.geoclarity.roofzouk.TaskHistoryActivity" android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+        </activity>
+         <service android:name=".MainService" android:process=":remote"></service>
+         <receiver 
+     		android:name=".BootReceiver"  
+     		android:enabled="true"  
+     		android:exported="false" 
+     		android:label="ServiceManager">    
+		     <intent-filter>        
+		      <action android:name="android.intent.action.BOOT_COMPLETED" />    
+		     </intent-filter>
+    	</receiver>
+    
+    	<!-- Battery Receiver -->
+        <receiver android:name=".BatteryReceiver" android:exported="true" > 
+			  <intent-filter > 
+			    <action android:name="android.intent.action.BATTERY_OKAY" />
+			    <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+			  </intent-filter> 
+		</receiver>
+		<receiver 
+    	    android:name=".GCMBroadcastReceiver"
+			android:permission="com.google.android.c2dm.permission.SEND">
+			<intent-filter>
+				<action android:name="com.google.android.c2dm.intent.RECEIVE" />
+				<action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+				<category android:name="com.geoclarity.roofzouk" />
+			</intent-filter>			
+		</receiver>
+         <meta-data
+         	android:name="com.google.android.maps.v2.API_KEY"
+         	android:value="AIzaSyD0xirtfWYaIRxihpxMo6XBySOJ_2MmSxc" />
+         <meta-data android:name="com.google.android.gms.version" 
+           android:value="@integer/google_play_services_version" />
+         
+    </application>
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <permission android:name="com.geoclarity.roofzouk.broadcast.permission.BROADCAST_DETECT" />
+	<uses-permission android:name="com.geoclarity.roofzouk.broadcast.permission.BROADCAST_DETECT"/>
+	<uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+	<uses-permission android:name="android.permission.GET_TASKS" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.BATTERY_STATS" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.CALL_PHONE" />
+	
+	<permission android:name="com.geoclarity.roofzouk.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.geoclarity.roofzouk.permission.C2D_MESSAGE"/>
+	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+	
+	 <uses-feature
+      android:glEsVersion="0x00020000"
+      android:required="true" />
+	 
+</manifest>
